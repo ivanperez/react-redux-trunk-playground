@@ -1,9 +1,11 @@
 {
-  "name": "react-redux-template",
+  "name": "react-redux-trunk-playground",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "axios": "^0.19.0",
+    "concurrently": "^4.1.2",
+    "http-proxy-middleware": "^0.20.0",
     "json-server": "^0.15.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
@@ -13,6 +15,8 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
+    "dev": "concurrently \"npm run serve\" \"npm run start\"",
+    "serve": "json-server --watch db.json --port 5000 --routes routes.json",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

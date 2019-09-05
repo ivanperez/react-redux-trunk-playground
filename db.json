@@ -1,0 +1,14 @@
+{
+  "todos": [
+    {
+      "name": "Buy milk",
+      "isComplete": true,
+      "id": 1
+    },
+    {
+      "name": "Send emails",
+      "isComplete": false,
+      "id": 2
+    }
+  ]
+}
